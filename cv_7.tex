@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Kevin} % Your first name
+\familyname{Raj} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Research Assistant}
+% \address{123 Broadway}{City, State 12345}
+% \mobile{(000) 111 1111}
+% \phone{(000) 111 1112}
+% \fax{(000) 111 1113}
+\email{kevinyitshak@gmail.com}
+\homepage{kevinyitshak.github.io}{kevinyitshak.github.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+% \extrainfo{additional information}
+% \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2020--2022} {Masters in Electrical Engineering}
+					{The Delft University of Technology}{Delft}
+					{}
+					{\textit {Specialization:} Signals \& Systems track.}
+
+\cventry{2015--2019} {Bachelor on Electrical \& Electronics Engineering}
+					{Manipal Institute of Technology}{Manipal}
+					{}
+					{\textit {Minor specialization:} Signals \& Systems.}  % Arguments not required can be left empty
+
+\section{Bachelors Thesis}
+
+\cvitem{Title}{Optic Disc Segmentation Using Modified Deep Retinal Image Understanding (DRIU).}
+\cvitem{Supervisors}{Dr. Chandra Sekhar Seelamantula \& Assistant Professor Harish Kumar J.R.}
+\cvitem{Description}{Proposed a technique for Optic Disc segmentation using retinal fundus
+					images by combining squeeze \& excite layer with Resnet-50 architecture,
+					which acts as an initial point for Glaucoma assessment.}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+% \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvitem{}{Image Processing, Signal Processing, Computer Vision, Machine Learning, Linear Algebra.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{Aug'19--Present}{Research Assistant}{\textsc{Spectrum Lab}}{IISc}
+		{}
+		{Developing a complete pipeline for the analysis of Wireless Capsule Endoscopy (WCE)
+			images, in collaboration with \href{https://qpiai.tech/}{\textsc{QpiAI\textsuperscript{TM}}.}
+		and Indian Airforce command hospital, Bangalore.\textit{Tool used:} Pytorch.}
+
+%------------------------------------------------
+\cventry{Jan'19-June'19}{Research Intern}{\textsc{Spectrum Lab}}{IISc}
+		{}
+		{Proposed an Artery-Vein classification network from single-wavelength fundus
+		images using the low-level to high-level features extracted from Identity mapping network,
+	which acts as a backbone architecture. I also developed an ImageJ plugin and android
+application based on the ‘ICIP 2019’ paper.
+		\textit{Tool used:} keras, ImageJ, Java.}
+
+%------------------------------------------------
+
+\cventry{May'18-July'18}{Summer Research Intern}{\textsc{Spectrum Lab}}{IISc}
+		{}
+		{Proposed a novel methodology using a multi-scale Harris corner technique and
+		iterative Voronoi decomposition technique for optic cup segmentation using the structural
+	properties of blood vessels. The Ministry of Human Resource Development (MHRD) ,India,
+under the IMPRINT initiative, funded this project. \textit{Tool used:} MATLAB.}
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\pubentry{2020}{\textbf {P. Kevin Raj}, Aniketh Manjunath, J.R.H. Kumar and Chandra S. Seelamantula}
+				{``Automatic Classification of Artery-Vein from Single Wavelength Fundus Images''}
+				{In Proc. IEEE International Symposium on Biomedical Imaging (ISBI)}
+				{Iowa, USA, 2020}{\href{https://ieeexplore.ieee.org/abstract/document/9098580}{\textcolor{blue}{[pdf]}}}
+
+\pubentry{2019}{\textbf{P. Kevin Raj}, J.R.H Kumar, S. Jois, S. Harsha and Chandra S. Seelamantula}
+				{``A Structure Tensor based Voronoi Decomposition Technique for Optic Cup Segmentation''}
+				{In Proc. IEEE International Conference on Image Processing (ICIP)}
+				{Taipei, Taiwan, 2019}
+				{\href{https://ieeexplore.ieee.org/document/8804286}{\textcolor{blue}{[pdf]}}
+				\href{https://1drv.ms/b/s!AujsDtKxFNJCg3Fv4Gg8icPY7mMJ?e=13q3mt}{\textcolor{red}{[Oral]}}}
+
+\pubentry{2019}{J.R.H. Kumar, K. Teotia, \textbf{P. Kevin Raj}, A. Jasbon, K.V. Rajagopal and Chandra S. Seelamantula}
+				{``Automatic Segmentation of Common Carotid Artery in Longitudinal Mode Ultrasound Images Using Active Oblongs''}
+				{In Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
+				{Brighton, UK, 2019}
+				{\href{https://ieeexplore.ieee.org/document/8682301}{\textcolor{blue}{[pdf]}}}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2019}{\textbf{Travel grant:} Amount of 940\$ awarded by IEEE Signal Processing Society to attend ICIP'19}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills \& Certifications}
+
+\cvitem{Skills}{Python, \textsc{html}, \LaTeX, Pytorch, Keras, MATLAB}
+\cvitem{Certifications}{Image and Video Processing, by Duke \textbf{Coursera}, Digital and Signal Processing, by EPFL \textbf{Coursera} , Neural Networks and Deep Learning, Machine Learning, and Hyperparameter tuning, Regularization and Optimization, by Deeplearning.ai \textbf{Coursera}.}
+\end{document}
